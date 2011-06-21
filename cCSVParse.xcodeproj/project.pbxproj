@@ -17,6 +17,7 @@
 		1A19120413B0AEBF00366A1C /* parseCSV.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A1911EB13B0AEBF00366A1C /* parseCSV.h */; };
 		1A19120513B0AEBF00366A1C /* parseCSV.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1911EC13B0AEBF00366A1C /* parseCSV.m */; };
 		1A19120E13B0C8DF00366A1C /* wimbledon.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1A19120D13B0C8DF00366A1C /* wimbledon.csv */; };
+		1A19121113B0E95800366A1C /* milwaukee.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1A19121013B0E95800366A1C /* milwaukee.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		1A1911EB13B0AEBF00366A1C /* parseCSV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parseCSV.h; sourceTree = "<group>"; };
 		1A1911EC13B0AEBF00366A1C /* parseCSV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = parseCSV.m; sourceTree = "<group>"; };
 		1A19120D13B0C8DF00366A1C /* wimbledon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wimbledon.csv; sourceTree = "<group>"; };
+		1A19121013B0E95800366A1C /* milwaukee.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = milwaukee.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 		1A19120C13B0C8DF00366A1C /* data */ = {
 			isa = PBXGroup;
 			children = (
+				1A19121013B0E95800366A1C /* milwaukee.csv */,
 				1A19120D13B0C8DF00366A1C /* wimbledon.csv */,
 			);
 			path = data;
@@ -227,6 +230,7 @@
 			files = (
 				1A19120313B0AEBF00366A1C /* LICENSE in Resources */,
 				1A19120E13B0C8DF00366A1C /* wimbledon.csv in Resources */,
+				1A19121113B0E95800366A1C /* milwaukee.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

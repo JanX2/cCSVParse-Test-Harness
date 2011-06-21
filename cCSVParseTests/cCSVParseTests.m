@@ -23,6 +23,24 @@
     [super tearDown];
 }
 
+// Milwaukee set is CR terminated comma-delimited
+- (void)testMilwaukee
+{
+    CSVParser *parser = [CSVParser new];
+    STAssertNotNil(parser, @"Parser instance created");
+    [parser openFile: @"cCSVParseTests/data/milwaukee.csv"];
+    NSMutableArray *csvData = [parser parseFile];
+    int totalRows = (int)[csvData count];
+    STAssertEquals(totalRows, 31, @"File loaded successfully");
+    
+    NSArray *row = [csvData objectAtIndex: 4];
+    STAssertEqualObjects([row objectAtIndex: 2], @"El Greco", @"Valid Trade Name");
+    STAssertEqualObjects([row objectAtIndex: 5], @"53225", @"Valid Zipcode");    
+    
+    [parser closeFile];
+}
+
+// Wimbledon set is LR terminated comma-delimited
 - (void)testWimbledon
 {
     CSVParser *parser = [CSVParser new];
