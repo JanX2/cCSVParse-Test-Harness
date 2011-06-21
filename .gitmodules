@@ -1,0 +1,3 @@
+[submodule "cCSVParse"]
+	path = cCSVParse
+	url = git://code.stapelberg.de/cCSVParse
