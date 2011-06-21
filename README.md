@@ -2,7 +2,7 @@ cCSVParse-Test-Harness
 ===========
 
 This Xcode framework project provides a testing harness to run against Michael
-Stapelberd's [cCSVParse library](http://michael.stapelberg.de/cCSVParse).
+Stapelberg's [cCSVParse library](http://michael.stapelberg.de/cCSVParse).
 
 TODO
 -------
