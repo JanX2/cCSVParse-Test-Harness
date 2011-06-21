@@ -13,6 +13,10 @@
 		1A1911B613B0AD4E00366A1C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A1911B413B0AD4E00366A1C /* InfoPlist.strings */; };
 		1A1911B913B0AD4E00366A1C /* cCSVParseTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 1A1911B813B0AD4E00366A1C /* cCSVParseTests.h */; };
 		1A1911BB13B0AD4E00366A1C /* cCSVParseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1911BA13B0AD4E00366A1C /* cCSVParseTests.m */; };
+		1A19120313B0AEBF00366A1C /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 1A1911EA13B0AEBF00366A1C /* LICENSE */; };
+		1A19120413B0AEBF00366A1C /* parseCSV.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A1911EB13B0AEBF00366A1C /* parseCSV.h */; };
+		1A19120513B0AEBF00366A1C /* parseCSV.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1911EC13B0AEBF00366A1C /* parseCSV.m */; };
+		1A19120E13B0C8DF00366A1C /* wimbledon.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1A19120D13B0C8DF00366A1C /* wimbledon.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +33,6 @@
 		1A19119713B0AD4E00366A1C /* cCSVParse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = cCSVParse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A19119A13B0AD4E00366A1C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		1A19119D13B0AD4E00366A1C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		1A19119E13B0AD4E00366A1C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		1A19119F13B0AD4E00366A1C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1A1911AC13B0AD4E00366A1C /* cCSVParseTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cCSVParseTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A1911B313B0AD4E00366A1C /* cCSVParseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "cCSVParseTests-Info.plist"; sourceTree = "<group>"; };
@@ -37,6 +40,10 @@
 		1A1911B713B0AD4E00366A1C /* cCSVParseTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cCSVParseTests-Prefix.pch"; sourceTree = "<group>"; };
 		1A1911B813B0AD4E00366A1C /* cCSVParseTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cCSVParseTests.h; sourceTree = "<group>"; };
 		1A1911BA13B0AD4E00366A1C /* cCSVParseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cCSVParseTests.m; sourceTree = "<group>"; };
+		1A1911EA13B0AEBF00366A1C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1A1911EB13B0AEBF00366A1C /* parseCSV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parseCSV.h; sourceTree = "<group>"; };
+		1A1911EC13B0AEBF00366A1C /* parseCSV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = parseCSV.m; sourceTree = "<group>"; };
+		1A19120D13B0C8DF00366A1C /* wimbledon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wimbledon.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +70,7 @@
 		1A19118B13B0AD4E00366A1C = {
 			isa = PBXGroup;
 			children = (
+				1A1911C413B0AEBF00366A1C /* cCSVParse */,
 				1A1911B113B0AD4E00366A1C /* cCSVParseTests */,
 				1A19119913B0AD4E00366A1C /* Frameworks */,
 				1A19119813B0AD4E00366A1C /* Products */,
@@ -91,7 +99,6 @@
 			isa = PBXGroup;
 			children = (
 				1A19119D13B0AD4E00366A1C /* AppKit.framework */,
-				1A19119E13B0AD4E00366A1C /* CoreData.framework */,
 				1A19119F13B0AD4E00366A1C /* Foundation.framework */,
 			);
 			name = "Other Frameworks";
@@ -100,6 +107,7 @@
 		1A1911B113B0AD4E00366A1C /* cCSVParseTests */ = {
 			isa = PBXGroup;
 			children = (
+				1A19120C13B0C8DF00366A1C /* data */,
 				1A1911B813B0AD4E00366A1C /* cCSVParseTests.h */,
 				1A1911BA13B0AD4E00366A1C /* cCSVParseTests.m */,
 				1A1911B213B0AD4E00366A1C /* Supporting Files */,
@@ -117,6 +125,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		1A1911C413B0AEBF00366A1C /* cCSVParse */ = {
+			isa = PBXGroup;
+			children = (
+				1A1911EA13B0AEBF00366A1C /* LICENSE */,
+				1A1911EB13B0AEBF00366A1C /* parseCSV.h */,
+				1A1911EC13B0AEBF00366A1C /* parseCSV.m */,
+			);
+			path = cCSVParse;
+			sourceTree = "<group>";
+		};
+		1A19120C13B0C8DF00366A1C /* data */ = {
+			isa = PBXGroup;
+			children = (
+				1A19120D13B0C8DF00366A1C /* wimbledon.csv */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -124,6 +150,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A19120413B0AEBF00366A1C /* parseCSV.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +225,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A19120313B0AEBF00366A1C /* LICENSE in Resources */,
+				1A19120E13B0C8DF00366A1C /* wimbledon.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A19120513B0AEBF00366A1C /* parseCSV.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +421,7 @@
 				1A1911C013B0AD4E00366A1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1A1911C113B0AD4E00366A1C /* Build configuration list for PBXNativeTarget "cCSVParseTests" */ = {
 			isa = XCConfigurationList;
@@ -399,6 +430,7 @@
 				1A1911C313B0AD4E00366A1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
